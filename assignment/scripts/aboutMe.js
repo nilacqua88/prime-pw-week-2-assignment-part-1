@@ -64,6 +64,7 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+let mostPets
 console.log('my pets' , pets);
 console.log('friends pets' , friendsPets);
 console.log('gave one pet to a friend' );
@@ -72,10 +73,18 @@ friendsPets++;
 console.log('my pets' , pets);
 console.log('friends pets' , friendsPets);
 console.log('bought another pet and friends gave back a pet' );
-pets +=2
+pets +=1
 friendsPets--;
 console.log('my pets' , pets);
 console.log('friends pets' , friendsPets);
+if (pets > friendsPets) {
+  console.log('Time to get another pet');
+}
+else {
+  console.log('mostPets');
+
+}
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 function Namesofpets (pets) {
   var pets;
